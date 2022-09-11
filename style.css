@@ -1,17 +1,31 @@
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary: hsla(283, 48%, 54%, 0.50);
+    --secondary: hsla(230, 96%, 62%, 0.50);
+}
 body{
     font-size: 14px;
     text-align: center;
     justify-content: center;
     height: 50px;
-    margin-top: auto;
+    margin-top: 0px;
     margin-left: 20px;
     margin-right: 20px;
 }
 
+.back{
+    background-color:navy;
+}
+
 .main{
     width:100%;
-    background-color: darkslategrey;
     height: 100vh;
+    background-color:#f0f8ff;
+    background: linear-gradient(135deg, var(--primary), var(--secondary)),
+                 url(./img/cover.jpg) no-repeat center center / cover;
+    
 }
 
 .navbar{
@@ -60,7 +74,7 @@ ul li a{
 }
 
 ul li a:hover{
-    color:blue;
+    color:orangered;
 }
 
 .navbar ul{
@@ -143,10 +157,12 @@ transform: scale(1,2);
 z-index: 5;
 }
 
+.excel{
+    background-color: #777;
+}
 .port1{
-    color: aliceblue;
+    color: orangered;
     font-size: 14px;
-    background-color: darkslategrey;
     font-weight: bold;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -160,24 +176,22 @@ a:link{
 }
 
 .port2{
-    color: aliceblue;
+    color: orangered;
     font-size: 22;
     font-family:Georgia, 'Times New Roman', Times, serif;
     align-items: center;
     margin-top: 310px;
     height: 100vh;
-    background-color: darkslategrey;
 }
 
 .content a{
-    color:chocolate;
+    color:orangered;
     font-weight: bold;
     font-style: italic;
 }
 
 .sqlContent{
     color: aliceblue;
-    background-color: darkslategrey;
     font-size: 16px;
     font-family:Georgia, 'Times New Roman', Times, serif;
     text-align: center;
@@ -189,7 +203,31 @@ a:link{
 }
 
 .sqlContent a{
-    color:chocolate;
+    color:orangered;
+}
+
+.click{
+    margin-top: -120px;
+    background-color:orangered;
+    margin-left: 44%;
+    margin-right: 44%;
+    color:#fff;
+    border: #777;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+.click1 :hover{
+    color:blue;
+}
+.click a{
+    text-decoration: none;
+    color:#f0f8ff;
+    font-weight: bold;
+}
+
+.sqlContent a{
+    color:orangered;
     font-weight: bold;
     font-style: italic;
 }
@@ -267,7 +305,7 @@ form{
 }
 
 .social-icon:hover{
-    color:chocolate;
+    color:orangered;
     transform: scale(1,2);
     z-index: 5;
     box-shadow: 0 0 20px rbga(0, 0, 0, .5);
@@ -281,7 +319,6 @@ form{
 
 .power{
     margin-top:-550px;
-    background-color: darkslategrey;
     box-shadow: 0 0 20px rbga(0, 0, 0, .5);
     transition: 0.5s;
     border-radius: 14px;
